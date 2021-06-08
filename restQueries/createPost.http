@@ -2,6 +2,6 @@ POST http://localhost:3000/api/v1/posts
 Content-Type: application/json
 
 {
-  "title" : "Sunday today",
-  "body": "work work work"
+  "title" : "Monday today",
+  "body": "holiday holiday"
 }
