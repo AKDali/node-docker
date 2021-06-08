@@ -56,16 +56,18 @@ app.use(
       resave: false,
       saveUninitialized: false,
       httpOnly: true,
-      maxAge: 1000 * 60 * 1, // in ms
+      maxAge: 1000 * 60 * 10, // in ms
     },
   })
 );
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.get("/", (req, res) => {
-  res.send("Hello World");
+
+app.get("/api/v1/hello", (req, res) => {
+  res.send("Hello");
 });
+
 app.use("/api/v1/posts", postRouter);
 app.use("/api/v1/users", userRouter);
 
