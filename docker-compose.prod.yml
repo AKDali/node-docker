@@ -1,0 +1,17 @@
+version: "3"
+services:
+  nginx:
+    ports:
+      - "80:80"
+  node-app:
+    build:
+      context: .
+      args:
+        NODE_ENV: production
+    environment:
+      - NODE_ENV=production
+    command: npm run start
+  mongo:
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=kadviz
+      - MONGO_INITDB_ROOT_PASSWORD=kadviz

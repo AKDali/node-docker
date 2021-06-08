@@ -1,0 +1,8 @@
+PATCH http://localhost:3000/api/v1/posts/60bb82c56d5bce01a3c3bc8b
+Content-Type: application/json
+
+{
+  "title" : "randy",
+  "body": "toto"
+}
+
