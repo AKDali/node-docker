@@ -13,8 +13,11 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh
 docker --version
 
+## install docker (amazon linux 2) go and check below repo
+https://gist.github.com/npearce/6f3c7826c7499587f00957fee62f8ee9
+
 ## install docker-compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 docker-compose -v
 
